@@ -103,7 +103,8 @@ def handle_feature(OverallQual, GrLivArea, TotalBsmtSF):
     predict_df['TotalBsmtSF'] = [TotalBsmtSF]
     regr.predict(predict_df)
     print(regr.predict(predict_df)[0])
-    return regr.predict(predict_df)[0]
+    result = str(regr.predict(predict_df)[0])
+    return result
 
 # predict_price(10, 1000, 1000)
 
