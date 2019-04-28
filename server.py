@@ -4,8 +4,6 @@ from websocket_server import WebsocketServer
 import sys
 from importlib import reload
 import pandas as pd
-import numpy as np
-from sklearn.ensemble import RandomForestRegressor
 from xgboost import XGBRegressor
 
 
