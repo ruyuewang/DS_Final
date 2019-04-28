@@ -1,7 +1,2 @@
-graphviz==0.8.4
 numpy==1.14.3
-pretty==0.1
-prettytable==0.7.2
-scikit-learn==0.19.1
-seaborn==0.8.1
 xgboost==0.81
