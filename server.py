@@ -18,6 +18,7 @@ def new_client(client, server):
 
 
 def client_left(client, server):
+    print(server)
     print("Client disconnected")
     # print("Client(%d) disconnected" % client['id'])
 
