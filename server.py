@@ -34,13 +34,6 @@ def message_back(client, server, message):
     server.send_message(client, result)
 
 # @TODO need to change the function to correct one
-# def handle_feature(text):
-#     f1 = text.split('*****')[0]
-#     f2 = text.split('*****')[1]
-#     result = "Calculation reuslt is " + f1 + f2 + "(Test version)"
-#     return result
-
-
 def handle_feature(OverallQual, GrLivArea, TotalBsmtSF):
     train = pd.read_csv("train.csv")
 
@@ -95,7 +88,7 @@ def handle_feature(OverallQual, GrLivArea, TotalBsmtSF):
     y = np.array(train['SalePrice']).tolist()
     regr = RandomForestRegressor(max_depth=20, random_state=0, n_estimators=30)
     regr.fit(X, y)
-    feature_names = list(train.columns.values)[1:]
+    feature_names = list(train.columns.values)[:-1]
     array = [-1]*80
     predict_df = pd.DataFrame([array], columns=feature_names)
     predict_df['OverallQual'] = [OverallQual]
