@@ -21,6 +21,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
     />
     <link rel="stylesheet" href="../css/mainpage.css" />
+    <script src="../scripts/scripts.js"></script>
     <title>House Price Calculator</title>
   </head>
   <body>
@@ -114,23 +115,37 @@
           <div id="features">
             <table class="table table-hover">
               <tr>
-                <td>OverallQual</td>
+                <td>GrLivArea</td>
                 <td><input type="text" id="f1" style="width:200px" /></td>
               </tr>
               <tr>
-                <td>GrLivArea</td>
+                <td>LotArea</td>
                 <td><input type="text" id="f2" style="width:200px" /></td>
               </tr>
               <tr>
-                <td>TotalBsmtSF</td>
+                <td>BsmtFinSF1</td>
                 <td><input type="text" id="f3" style="width:200px" /></td>
               </tr>
               <tr>
-                <td>Feature#4</td>
-                <td><input type="text" id="f4" style="width:200px" /></td>
+                <td>OverallQual</td>
+                <td input type = "text">
+                <select id = "f4">
+                  <option value="10">10 Very Excellent</option>
+                  <option value="9">9 Excellent</option>
+                  <option value="8">8 Very Good</option>
+                  <option value="7">7 Good</option>
+                  <option value="6">6 Above Average</option>
+                  <option value="5">5 Average</option>
+                  <option value="4">4 Below Average</option>
+                  <option value="3">3 Fair</option>
+                  <option value="2">2 Poor</option>
+                  <option value="1">1 Very Poor</option>
+                </select>
+                </td>
+                <!--<td><input type="text" id="f4" style="width:200px" /></td>-->
               </tr>
               <tr>
-                <td>Feature#5</td>
+                <td>TotalBsmtSF</td>
                 <td><input type="text" id="f5" style="width:200px" /></td>
               </tr>
             </table>
